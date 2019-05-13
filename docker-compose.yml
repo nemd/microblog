@@ -13,7 +13,7 @@ services:
     environment:
       - FLASK_ENV=development
       - SECRET_KEY=sOme-bulLshit_dEv-seCret
-      - DATABASE_URL="sqlite:////db/microblog.db"
+      - "DATABASE_URL=sqlite:////db/microblog.db"
     command: flask run --host=0.0.0.0
     volumes:
       - ./microblog:/code
