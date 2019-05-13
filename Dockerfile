@@ -1,10 +1,10 @@
 FROM alpine:3.9
 
 RUN apk update &&\
-		apk --upgrade --no-cache add py-pip sqlite
+		apk --upgrade --no-cache add py3-pip sqlite
 
-RUN pip install --upgrade pip &&\
-		pip install flask flask-wtf flask-sqlalchemy flask-migrate
+RUN pip3 install --upgrade pip &&\
+		pip3 install flask flask-wtf flask-sqlalchemy flask-migrate
 
 ENV FLASK_APP microblog.py
 
